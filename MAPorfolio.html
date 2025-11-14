@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Ángel Díaz</title>
+    <meta
+      name="description"
+      content="Open-source personal portfolio using Tailwind, easily configurable with just one file."
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .font-poppins {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  
+  </head>
+  <body class="relative flex h-screen overflow-hidden bg-black/90">
+    <!--  Video de fondo -->
+    <video
+      id="homeVideo"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto"
+      class="absolute inset-0 object-cover w-full h-full z-[-1] opacity-8"
+    >
+      <source src="source/particulas.mp4" type="video/webm" />
+      Tu navegador no soporta el video.
+    </video>
+
+    <!--  Capa oscura sobre el vídeo -->
+    <div class="absolute inset-0 bg-black/80 bg -z-10"></div>
+
+    <!-- Menu -->
+    <div class="w-auto p-3 justify-items-center bg-white/1 group">
+      <h1
+        class="m-2 text-lg font-bold text-white/88 hover:text-purple-400/80 hover:duration-300 hover:scale-110"
+      >
+        <a href="#inicio">MA</a>
+      </h1>
+      <ul class="justify-items-center">
+        <li class="mb-2 no-underline hover:duration-300 hover:scale-95">
+          <a href="#skills" class="text-white/50">Skills</a>
+        </li>
+        <li class="mb-2 no-underline hover:duration-300 hover:scale-95">
+          <a href="#Qualifi" class="text-white/50">Qualifi</a>
+        </li>
+        <li class="mb-2 no-underline hover:duration-300 hover:scale-95">
+          <a href="#Projects" class="text-white/50">Projects</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Main Content -->
+    <div class="flex flex-col w-full h-full p-6 overflow-auto">
+      <div
+        class="flex justify-center mt-6 rounded-lg shadow-2xl shadow-white/4 bg-white/4"
+      >
+        <!-- rotar -->
+
+        <div
+          id="inicio"
+          class="flex flex-col p-4 md:flex-row md:justify-between"
+        >
+          <!-- foto y rounded -->
+
+          <div
+            class="flex flex-col items-center justify-center ml-3 text-center"
+          >
+            <img src="images/images.png" class="w-40 h-40 rounded-full" />
+            <h3 class="mt-4 font-bold text-white text">Miguel Ángel Díaz</h3>
+            <p class="flex text-white/75 text-sm-end">
+              Seville,Spain
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="w-6 h-6 m-1 mt-0.5 hover:scale-95 transition-colors hover:duration-300 text-purple group-hover:opacity-100 group-hover:text-white"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"
+                  fill="#AA151B"
+                />
+                <rect x="2" y="8" width="20" height="8" fill="#F1BF00" />
+              </svg>
+            </p>
+          </div>
+
+          <div
+            class="items-center justify-center p-2 pl-10 pr-10 m-2 mb-2 w-100 h-2/6"
+          >
+            <h1 class="mb-2 text-xl font-bold text-white/88 font-size">
+              Cross-platform application developer
+            </h1>
+            <p class="text-white/80">
+              Cross-platform application developer with a keen eye for graphic
+              detail. I combine my technical skills and creativity to develop
+              functional and aesthetic solutions focused on the user experience.
+            </p>
+
+            <!-- redes -->
+            <div class="flex h-auto">
+              <!-- github -->
+              <a
+                href="https://github.com/miguelangel300"
+                target="_blank"
+                class="relative flex items-center m-2 text-purple-500 transition-all duration-300 rounded-full group hover:pr-16"
+                ><div
+                  class="relative flex items-center mt-2 mb-2 mr-2 text-purple-500 transition-all duration-300 rounded-full group hover:pr-16"
+                >
+                  <div
+                    class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-full group-transition-colors group-hover:opacity-100 group-hover:bg-purple-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-6 h-6 group-duration-300 group-transition-colors group-hover:opacity-100 group-hover:text-white"
+                      viewBox="0 0 18 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.49C3.73 14.91 3.27 13.25 3.27 13.25c-.36-.92-.88-1.17-.88-1.17-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.22 1.87.87 2.33.67.07-.52.28-.87.51-1.07-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.02A9.58 9.58 0 018 3.47a9.6 9.6 0 012.5.34c1.9-1.29 2.74-1.02 2.74-1.02.55 1.4.2 2.44.1 2.7.64.7 1.03 1.59 1.03 2.68 0 3.86-2.34 4.7-4.57 4.95.29.25.54.73.54 1.48v2.19c0 .21.15.45.55.38A8 8 0 008 0z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="absolute text-sm font-medium text-purple-500 transition-all duration-300 opacity-0 left-12 group-hover:opacity-100"
+                    >GitHub</span
+                  >
+                </div></a
+              >
+
+              <!-- Gmail -->
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=m.angel.d.oliva@gmail.com&su=Consulta%20desde%20tu%20Portafolio%20Personal&body=Hola%20Miguel%2C%0A%0AVi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative flex items-center m-2 text-purple-500 transition-all duration-300 rounded-full group hover:pr-16"
+              >
+                <div
+                  class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-full group-hover:bg-purple-600"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-6 h-6 transition-colors duration-300 group-hover:text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-.4 3.25l-7.6 5.09-7.6-5.09V6.5l7.6 5.09 7.6-5.09v.75z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="absolute text-sm font-medium text-purple-500 transition-all duration-300 opacity-0 left-12 group-hover:opacity-100"
+                >
+                  Gmail
+                </span>
+              </a>
+
+              <!-- Linketlin -->
+              <a
+                href="https://www.linkedin.com/in/miguel-%C3%A1ngel-fot%C3%B3grafo/"
+                target="_blank"
+                class="relative flex items-center m-2 text-purple-500 transition-all duration-300 rounded-full group hover:pr-16"
+              >
+                <div
+                  class="relative flex items-center m-2 text-purple-500 transition-all duration-300 rounded-full group hover:pr-16"
+                >
+                  <div
+                    class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-full group-transition-colors group-hover:opacity-100 group-hover:bg-purple-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="w-6 h-6 group-duration-300 group-transition-colors group-hover:opacity-100 group-hover:text-white"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.98 0h3.83v2.05h.05c.53-.98 1.83-2.05 3.76-2.05 4.02 0 4.76 2.65 4.76 6.09V23h-4v-7.68c0-1.83-.03-4.19-2.55-4.19-2.55 0-2.94 1.99-2.94 4.05V23h-4V8z"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="absolute text-sm font-medium text-purple-500 transition-all duration-300 opacity-0 left-12 group-hover:opacity-100"
+                    >Linketlin</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- soft Skills -->
+      <h2
+        id="skills"
+        class="m-6 mt-10 text-2xl font-bold text-white font-poppins"
+      >
+        Soft Skills
+      </h2>
+
+      <div class="flex justify-center mt-8 text-gray-300 scale-120">
+        <div
+          class="flex flex-col items-center p-2 m-4 rounded-lg shadow-lg hover:scale-102 hover:duration-300 group bg-white/4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="group-duration-300 group-transition-colors w-14 h-14 group-hover:opacity-100 group-hover:text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h6v-2.5c0-.8.7-1.5 1.5-1.5h1c.8 0 1.5.7 1.5 1.5V19h6v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05C17.27 13.83 20 15.08 20 16.5V19h3v-2.5c0-2.33-4.67-3.5-7-3.5z"
+            />
+          </svg>
+          <h3 class="m-1 text-sm">Teamwork</h3>
+        </div>
+        <div
+          class="flex flex-col items-center p-2 m-4 rounded-lg shadow-lg hover:scale-102 hover:duration-300 group bg-white/4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="group-scale-125 group-duration-300 group-transition-colors w-14 h-14 group-hover:opacity-100 group-hover:text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm0 6c2.21 0 4 .9 4 2v2h2v3h-2v7h-8v-7H6v-3h2v-2c0-1.1 1.79-2 4-2z"
+            />
+          </svg>
+          <h3 class="m-1 text-sm">Self-taught</h3>
+        </div>
+        <div
+          class="flex flex-col items-center p-2 m-4 rounded-lg shadow-lg group bg-white/4 hover:scale-102 hover:duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="group-duration-300 group-transition-colors w-14 h-14 group-hover:opacity-100 group-hover:text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2a7 7 0 00-4.76 12.07c.46.39.76.96.76 1.58V18a1 1 0 001 1h5a1 1 0 001-1v-2.35c0-.62.3-1.19.76-1.58A7 7 0 0012 2zm0 2a5 5 0 013.39 8.74c-.89.75-1.39 1.83-1.39 2.91V17h-4v-1.35c0-1.08-.5-2.16-1.39-2.91A5 5 0 0112 4zm-2 16h4v1a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1z"
+            />
+          </svg>
+          <h3 class="m-1 text-sm">Creativity</h3>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center p-2 m-4 text-center rounded-lg group bg-white/4 hover:scale-102 hover:duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="group-duration-300 group-transition-colors w-14 h-14 group-hover:opacity-100 group-hover:text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19.43 12.98c.04-.32.07-.65.07-.98s-.03-.66-.07-.98l2.11-1.65a.5.5 0 0 0 .11-.64l-2-3.46a.5.5 0 0 0-.61-.22l-2.49 1a7.025 7.025 0 0 0-1.7-.98l-.38-2.65A.5.5 0 0 0 14 2h-4a.5.5 0 0 0-.49.42l-.38 2.65c-.62.25-1.19.57-1.7.98l-2.49-1a.5.5 0 0 0-.61.22l-2 3.46a.5.5 0 0 0 .11.64L4.57 11c-.04.32-.07.65-.07.98s.03.66.07.98L2.46 14.61a.5.5 0 0 0-.11.64l2 3.46a.5.5 0 0 0 .61.22l2.49-1c.51.41 1.08.73 1.7.98l.38 2.65A.5.5 0 0 0 10 22h4a.5.5 0 0 0 .49-.42l.38-2.65c.62-.25 1.19-.57 1.7-.98l2.49 1a.5.5 0 0 0 .61-.22l2-3.46a.5.5 0 0 0-.11-.64L19.43 12.98zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+            />
+            <path d="M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+          </svg>
+          <h3 class="m-1 text-sm">Problem solving</h3>
+        </div>
+      </div>
+
+      <!-- certifcations and studies -->
+      <div class="p-5 mt-10">
+        <h2
+          id="Qualifi"
+          class="mb-8 text-2xl font-bold text-white font-poppins"
+        >
+          Qualifications
+        </h2>
+
+        <ul class="relative pl-8 ml-4 border-l-2 border-gray-700">
+          <li class="relative mb-10">
+            <div
+              class="absolute w-4 h-4 bg-gray-300 rounded-full mt-1.5 -left-[40.5px] border border-gray-700/70"
+            ></div>
+
+            <h3 class="mb-1 text-xl font-bold text-white">
+              Multi-platform application programming and development
+            </h3>
+            <p class="text-sm text-gray-300">2025 - 2026</p>
+            <p class="italic text-white/80">Fesac</p>
+          </li>
+
+          <li class="relative mb-10">
+            <div
+              class="absolute w-4 h-4 bg-gray-300 rounded-full mt-1.5 -left-[40.5px] border border-gray-700/70"
+            ></div>
+
+            <h3 class="mb-1 text-xl font-bold text-white">
+              Master's Degree in Video Game Art, Design and Programming
+            </h3>
+            <p class="text-sm text-gray-300">2023 - 2024</p>
+            <p class="italic text-white/80">CEI</p>
+          </li>
+
+          <li class="relative">
+            <div
+              class="absolute w-4 h-4 bg-gray-300 rounded-full mt-1.5 -left-[40.5px] border border-gray-700/70"
+            ></div>
+
+            <h3 class="mb-1 text-xl font-bold text-white">English B1</h3>
+            <p class="text-sm text-gray-300">2020</p>
+            <p class="italic text-white/80"></p>
+          </li>
+        </ul>
+      </div>
+      <!-- proyecs -->
+      <section id="Projects" class="p-10 mt-10">
+        <h2 class="mb-10 text-3xl font-bold text-white">Projects</h2>
+
+        <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+          <div
+            class="flex flex-col justify-between p-6 shadow-lg bg-white/5 rounded-xl"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold text-white">Mini-Game</h3>
+                <div class="flex space-x-3 text-gray-400">
+                  <a
+                    href="https://m-angel300.itch.io/dimangel"
+                    target="_blank"
+                    class="transition-colors duration-200 hover:text-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 32 32"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M 16 5 C 12.748 5 8.3121094 5.0508594 7.4121094 5.1308594 C 6.4021094 5.7368594 4.4028125 8.0309531 4.3828125 8.6269531 L 4.3828125 9.6269531 C 4.3828125 10.889953 5.5657188 12 6.6367188 12 C 7.9197187 12 8.9902344 10.929969 8.9902344 9.6679688 C 8.9902344 10.929969 10.0305 12 11.3125 12 C 12.6055 12 13.605469 10.930969 13.605469 9.6679688 C 13.605469 10.929969 14.695281 12 15.988281 12 L 16.009766 12 C 17.302766 12 18.392578 10.930969 18.392578 9.6679688 C 18.392578 10.929969 19.402547 12 20.685547 12 C 21.968547 12 23.009766 10.930969 23.009766 9.6679688 C 23.009766 10.929969 24.080281 12 25.363281 12 C 26.434281 12 27.615234 10.889953 27.615234 9.6269531 L 27.615234 8.6269531 C 27.595234 8.0309531 25.595938 5.7368594 24.585938 5.1308594 C 21.443938 5.0198594 19.252 5 16 5 z M 13.550781 11.742188 C 12.497781 13.552188 9.8523125 13.573906 8.8203125 11.753906 C 8.1903125 12.845906 6.7642969 13.267547 6.1542969 13.060547 C 5.9762969 14.959547 5.8534844 24.70875 7.1464844 26.34375 C 10.943484 27.22875 21.164516 27.20975 24.853516 26.34375 C 26.348516 24.81975 26.013703 14.821547 25.845703 13.060547 C 25.235703 13.267547 23.809453 12.845906 23.189453 11.753906 C 22.146453 13.573906 19.501219 13.552188 18.449219 11.742188 C 18.124219 12.332187 17.367 13.109375 16 13.109375 C 14.997 13.148375 14.051781 12.607187 13.550781 11.742188 z M 11.419922 14 C 12.219922 14 12.950078 14.000469 13.830078 14.980469 C 15.280078 14.830469 16.719922 14.830469 18.169922 14.980469 C 19.059922 14.010469 19.780078 14.009766 20.580078 14.009766 C 23.160078 14.009766 23.780937 17.819609 24.710938 21.099609 C 25.550938 24.149609 24.429062 24.230469 23.039062 24.230469 C 20.969062 24.150469 19.820313 22.650625 19.820312 21.140625 C 17.890313 21.460625 14.809688 21.580625 12.179688 21.140625 C 12.179688 22.650625 11.030938 24.150469 8.9609375 24.230469 C 7.5709375 24.230469 6.4490625 24.149609 7.2890625 21.099609 C 8.2190625 17.799609 8.8399219 14.009766 11.419922 14.009766 L 11.419922 14 z M 16 16.876953 C 16 16.876953 14.306 18.439375 14 18.984375 L 15.107422 18.943359 L 15.107422 19.910156 C 15.107422 19.968156 15.926 19.917969 16 19.917969 C 16.447 19.934969 16.892578 19.951156 16.892578 19.910156 L 16.892578 18.943359 L 18 18.984375 C 17.694 18.438375 16 16.876953 16 16.876953 z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="mb-4 text-sm text-gray-300">
+                ‘Explosion-Space: Mini spaceship game with a focus on collision
+                management and optimised pixel art. It features a simple
+                dodge-and-shoot game loop, ideal for testing scoring logic,
+                sprite rendering, and efficient hitbox detection.’
+              </p>
+              <div
+                class="relative w-full h-48 mb-4 overflow-hidden border border-gray-700 rounded-md"
+              >
+                <img
+                  src="proyects/mini-game.png"
+                  alt="AGIX Dashboard Screenshot"
+                  class="absolute inset-0 object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span
+                class="px-3 py-1 text-xs text-gray-200 bg-gray-700 rounded-full"
+                >Unity</span
+              >
+              <span
+                class="px-3 py-1 text-xs text-gray-200 bg-gray-700 rounded-full"
+                >C#</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-6 shadow-lg bg-white/5 rounded-xl"
+          >
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold text-white">Openfolio</h3>
+                <div class="flex space-x-3 text-gray-400">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="transition-colors duration-200 hover:text-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 18 16"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.49C3.73 14.91 3.27 13.25 3.27 13.25c-.36-.92-.88-1.17-.88-1.17-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.22 1.87.87 2.33.67.07-.52.28-.87.51-1.07-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.02A9.58 9.58 0 018 3.47a9.6 9.6 0 012.5.34c1.9-1.29 2.74-1.02 2.74-1.02.55 1.4.2 2.44.1 2.7.64.7 1.03 1.59 1.03 2.68 0 3.86-2.34 4.7-4.57 4.95.29.25.54.73.54 1.48v2.19c0 .21.15.45.55.38A8 8 0 008 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="mb-4 text-sm text-gray-300">
+                Open-source personal portfolio using Tailwind, easily
+                configurable with just one file.
+              </p>
+              <div
+                class="relative w-full h-48 mb-4 overflow-hidden border border-gray-700 rounded-md"
+              >
+                <img
+                  src="proyects/openfolio.png"
+                  alt="Openfolio Contact Form Screenshot"
+                  class="absolute inset-0 object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span
+                class="px-3 py-1 text-xs text-gray-200 bg-gray-700 rounded-full"
+                >Tailwind</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
